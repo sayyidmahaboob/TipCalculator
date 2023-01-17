@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- LINKING FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!-- h1 for heading inside a header-->
+    <div class="project-tip">
+
+        <div class="tip-calculator-placeholder">
+            <div class="tip-calculator-wrapper">
+                <div class="tip-calculator-header">
+                    <h1>Tip Calculator </h1>
+                </div>
+                <form>
+                    <p> Your Total Bill Amount in Rupees (&#8377) </p>
+                    <input type="number" id="total-bill-amount" placeholder="Total Bill Amount" min=1>
+                    <!-- Min is 1rs -->
+                    <p id="total-bill-error-message" class="error-message"></p>
+                    <p> How you rate this service ? </p>
+                    <select id="service-quality">
+                        <option disabled selected value="0"> Rate your experience </option>
+                        <option value="0.20"> 20&#37; Excellent </option>
+                        <option value="0.15"> 15&#37; Good </option>
+                        <option value="0.10"> 10&#37; Its Ok </option>
+                        <option value="0.05"> 5&#37; Not Good </option>
+                        <option value="0.02"> 2&#37; Terrible </option>
+                    </select>
+                    <p></p>
+                    <p> Number of People sharing the bill ? </p>
+                    <input type="number" id="number-of-people" placeholder="Number of People"> <br>
+                    <button type="button" id="calculate"> Chalo Bhai Log Paise Nikalo.. </button>
+                </form>
+                <div id="answer">
+                    <p> Actual Bill : <span id="actual-bill"> </span>, TotalTip Amount : <span id="total-tip"> 0.00
+                        </span>, Total Bill including Tip: <span id="total-bill"> </span> <br> Tip Amount to pay per
+                        person : <span id="tip-per-person"> </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--container end-->
+
+
+    <!-- adding footer -->
+
+
+    <section class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">Services</a>
+            </li>
+
+            <li>
+                <a href="#">Terms</a>
+            </li>
+
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            <img src="/xNewt-removebg.png" alt="myTeamLogo" height="20px" width="20px" text-align="center">
+            Team Xtreme &#169; Syed Mahboob
+        </p>
+
+        <!-- <div class="wrap">
+            <p class="gradient-text">Team Xterm</p>
+        </div> -->
+
+    </section>
+    <!-- <i class='fa fa-trademark' style='color:#ff1900'></i> -->
+
+
+    <!-- link js -->
+    <script src="/script.js"></script>
+</body>
+
+</html>
