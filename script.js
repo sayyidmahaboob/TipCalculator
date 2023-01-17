@@ -15,7 +15,7 @@ function tipCalculator() {
 
   //-----------------------------------------------------------------------------------------------------------//
 
-  // validate input if no-one enters alert
+  // validate input if no-one enters a
 
   if (billAmount === "" || serviceQuality == 0) {
     alert("Please enter values");
